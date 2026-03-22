@@ -1070,7 +1070,7 @@ footer {
 
 .footer-credit {
   font-size: 0.72rem;
-  color: var(--color-border);
+  color: #d9d2cc;
   margin-top: 0.5rem;
   letter-spacing: 0.02em;
 }
