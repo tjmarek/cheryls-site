@@ -492,13 +492,15 @@ a.card:hover,
    IMAGE PLACEHOLDERS
    ============================================ */
 
-.img-placeholder img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  position: relative;
-  z-index: 1;
+.img-placeholder {
+width: 100%;
+border-radius: var(--radius-lg);
+background: linear-gradient(135deg, var(--color-peach-light), var(--color-peach));
+overflow: hidden;
+object-fit: cover;
+object-position: top;
+position: relative;
+z-index: 1;
 }
 
 .img-placeholder::after {
