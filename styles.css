@@ -1211,3 +1211,9 @@ footer {
     scroll-behavior: auto !important;
   }
 }
+
+@media (max-width: 768px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+}
