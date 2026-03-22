@@ -655,8 +655,8 @@ a.card:hover,
 }
 
 .hero-headshot img {
-  width: 100%;
-  max-width: 420px;
+  width: 40%;
+  max-width: 120px;
   height: auto;
   display: block;
   margin: 0 auto;
