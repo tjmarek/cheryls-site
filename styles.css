@@ -302,10 +302,9 @@ h3 { font-size: 1.1rem; }
    HERO HEADLINE EFFECTS
    ============================================ */
 
-/* "Burnout" — bold, tracked, slightly faded so Breakthrough pops */
 .hero-word-burnout {
-  font-style: normal;
-  font-family: var(--font-sans);
+  font-style: italic;
+  font-family: var(--font-serif);
   font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--color-ink);
@@ -313,7 +312,6 @@ h3 { font-size: 1.1rem; }
   display: inline-block;
 }
 
-/* Subtle strikethrough-style underline to signal "the old state" */
 .hero-word-burnout::after {
   content: "";
   position: absolute;
