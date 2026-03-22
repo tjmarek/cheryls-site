@@ -1070,17 +1070,17 @@ footer {
 
 .footer-credit {
   font-size: 0.72rem;
-  color: #d9d2cc;
+  color: #6b6b6b;
   margin-top: 0.5rem;
   letter-spacing: 0.02em;
 }
 
 .footer-credit a {
-  color: var(--color-border);
+  color: #6b6b6b;
   transition: color 0.15s ease;
 }
 
-.footer-credit a:hover { color: var(--color-terra); }
+.footer-credit a:hover { color: #6b6b6b; }
 
 /* ============================================
    SCROLL REVEAL
