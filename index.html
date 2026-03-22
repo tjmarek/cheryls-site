@@ -127,51 +127,88 @@
       <!-- =====================
            SOCIAL PROOF STRIP
            ===================== -->
-      <section class="band--warm">
-        <div class="wrapper section reveal">
-          <div class="inline-strip" style="background: transparent; box-shadow: none; border: none;">
-            <div class="inline-strip-text">
-              <span class="kicker">Trusted by</span>
-              <h2>Women who were ready for their next chapter.</h2>
-              <p>
-                Clients in enterprise tech, SaaS, sales leadership, and
-                services — at every stage from early career to executive reinvention.
-              </p>
-            </div>
-            <div
-              style="
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.75rem;
-                align-items: center;
-              "
-            >
-              <!-- Replace with real client logos or "as seen in" marks -->
-           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start;">
+<section class="band--warm">
+  <div class="wrapper">
+    <div style="
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    ">
 
-  <!-- LEFT: your existing headline + body copy -->
-  <div>
-    <h2><!-- your heading --></h2>
-    <p><!-- your subtext --></p>
+      <!-- LEFT: heading + subtext -->
+      <div>
+        <p style="
+          font-size: 0.72rem;
+          font-weight: 600;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: var(--color-terra);
+          margin-bottom: 0.75rem;
+        ">Trusted By</p>
+
+        <h2 style="
+          font-size: clamp(1.6rem, 3vw, 2.4rem);
+          font-family: var(--font-serif);
+          color: var(--color-ink);
+          line-height: 1.2;
+          margin-bottom: 1rem;
+        ">Women who were ready for their next chapter.</h2>
+
+        <p style="
+          font-size: 0.975rem;
+          color: var(--color-mid);
+          line-height: 1.7;
+          max-width: 42ch;
+        ">Clients in enterprise tech, SaaS, sales leadership, and services — at every stage from early career to executive reinvention.</p>
+      </div>
+
+      <!-- RIGHT: pull quotes -->
+      <div style="
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        padding-top: 0.25rem;
+      ">
+        <p style="
+          font-size: 0.875rem;
+          color: var(--color-mid);
+          font-style: italic;
+          font-family: var(--font-serif);
+          line-height: 1.6;
+          margin: 0;
+        ">"This work changed the trajectory of my career and my life." — <strong style="font-style: normal; color: var(--color-ink);">Sarah, VP of Sales</strong></p>
+
+        <p style="
+          font-size: 0.875rem;
+          color: var(--color-mid);
+          font-style: italic;
+          font-family: var(--font-serif);
+          line-height: 1.6;
+          margin: 0;
+        ">"I finally feel like I'm living on my own terms." — <strong style="font-style: normal; color: var(--color-ink);">Michelle, Founder</strong></p>
+
+        <p style="
+          font-size: 0.875rem;
+          color: var(--color-mid);
+          font-style: italic;
+          font-family: var(--font-serif);
+          line-height: 1.6;
+          margin: 0;
+        ">"I got a promotion I'd been too afraid to ask for." — <strong style="font-style: normal; color: var(--color-ink);">Dana, Sales Director</strong></p>
+      </div>
+
+    </div>
   </div>
 
- <!-- RIGHT: pull quotes -->
-<div style="display: flex; flex-direction: column; gap: 0.65rem; align-self: start;">
-  <p style="font-size: 0.875rem; color: var(--color-mid); font-style: italic; font-family: var(--font-serif);">
-    "This work changed the trajectory of my career and my life." — <strong style="font-style: normal; color: var(--color-ink);">Sarah, VP of Sales</strong>
-  </p>
-  <p style="font-size: 0.875rem; color: var(--color-mid); font-style: italic; font-family: var(--font-serif);">
-    "I finally feel like I'm living on my own terms." — <strong style="font-style: normal; color: var(--color-ink);">Michelle, Founder</strong>
-  </p>
-  <p style="font-size: 0.875rem; color: var(--color-mid); font-style: italic; font-family: var(--font-serif);">
-    "I got a promotion I'd been too afraid to ask for." — <strong style="font-style: normal; color: var(--color-ink);">Dana, Sales Director</strong>
-  </p>
-</div>
-
-</div>
-          </div>
-        </div>
-      </section>
+  <style>
+    @media (max-width: 768px) {
+      .band--warm .wrapper > div {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+</section>
 
       <!-- =====================
            STATS
