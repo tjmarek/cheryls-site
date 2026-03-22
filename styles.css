@@ -660,6 +660,7 @@ a.card:hover,
   height: auto;
   display: block;
   margin: 0 auto;
+   padding-bottom: 10px;
 }
 
 .hero-signoff           { font-size: 0.82rem; color: var(--color-muted); }
