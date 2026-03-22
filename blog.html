@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog | From Burnout To Breakthrough | Cheryl Donahue</title>
+    <meta
+      name="description"
+      content="Honest conversations about burnout, career transitions, confidence, and designing a life you love — by Cheryl Donahue, executive coach and mentor for women."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Blog | From Burnout To Breakthrough" />
+    <meta property="og:description" content="Insights, reflections, and practical perspective for ambitious women navigating big transitions." />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://fromburnoutbreakthrough.com/blog.html" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header>
+      <div class="wrapper navbar">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-logo" aria-hidden="true"></div>
+          <div class="nav-brand-text">
+            <span class="nav-brand-name">From Burnout To Breakthrough</span>
+            <span class="nav-brand-tagline">Coaching &amp; Mentorship for Women</span>
+          </div>
+        </a>
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my-story.html">My Story</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a href="work-with-me.html" class="nav-cta">Book a Consultation</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="nav-mobile" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="my-story.html">My Story</a>
+        <a href="services.html">Services</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="work-with-me.html" class="nav-mobile-cta">Book a Consultation</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- =====================
+           PAGE HERO
+           ===================== -->
+      <section class="band--warm">
+        <div class="wrapper section--lg">
+          <div class="reveal" style="max-width: 640px;">
+            <span class="kicker">The Blog</span>
+            <h1 style="margin-bottom: 0.85rem;">
+              Honest conversations about<br />
+              <em class="serif" style="color: var(--color-terra);">
+                burnout, growth &amp; life.
+              </em>
+            </h1>
+            <p class="lead">
+              No fluff, no generic listicles. Just real perspective for
+              ambitious women navigating the messy, meaningful work of
+              designing a life they actually love.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================
+           FEATURED POST
+           ===================== -->
+      <section class="wrapper section">
+        <div class="section-header reveal">
+          <div class="section-header-left">
+            <span class="kicker">Featured</span>
+            <h2>Start here.</h2>
+          </div>
+        </div>
+
+        <div
+          class="reveal"
+          style="
+            display: grid;
+            grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+            gap: 2.5rem;
+            align-items: center;
+            background: var(--color-white);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+          "
+        >
+          <!-- Featured image -->
+          <div
+            class="blog-card-img"
+            style="height: 340px; border-radius: 0;"
+          >
+            <!-- <img src="assets/blog-featured.jpg" alt="The 5 Signs You're Closer to Burnout Than You Think" /> -->
+          </div>
+
+          <!-- Featured content -->
+          <div style="padding: 2rem 2rem 2rem 0;">
+            <span class="blog-card-meta" style="margin-bottom: 0.75rem; display: block;">
+              Burnout &nbsp;·&nbsp; 5 min read &nbsp;·&nbsp; March 2026
+            </span>
+            <h2 style="font-size: 1.4rem; margin-bottom: 0.75rem; line-height: 1.25;">
+              The 5 Signs You're Closer to Burnout Than You Think
+            </h2>
+            <p style="font-size: 0.95rem; color: var(--color-mid); line-height: 1.7; margin-bottom: 1.25rem;">
+              Overachievers are often the last to admit exhaustion. We
+              reframe it as drive, discipline, dedication. But there are
+              patterns — quieter ones — that signal you're much closer to
+              the edge than your calendar would suggest.
+            </p>
+            <a href="blog-post.html" class="btn-warm">Read the article</a>
+          </div>
+        </div>
+
+        <!-- Mobile fallback: stack the featured post -->
+        <style>
+          @media (max-width: 767px) {
+            .featured-post-grid {
+              grid-template-columns: 1fr !important;
+            }
+            .featured-post-grid > div:last-child {
+              padding: 1.5rem !important;
+            }
+          }
+        </style>
+      </section>
+
+      <!-- =====================
+           CATEGORY FILTERS
+           ===================== -->
+      <section class="wrapper" style="padding-bottom: 1rem;">
+        <div
+          class="reveal"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            align-items: center;
+          "
+        >
+          <span style="font-size: 0.8rem; color: var(--color-muted); margin-right: 0.25rem;">
+            Filter by:
+          </span>
+          <button
+            class="filter-btn active"
+            data-filter="all"
+            style="
+              padding: 0.35rem 0.9rem;
+              border-radius: var(--radius-pill);
+              border: 1px solid var(--color-ink);
+              background: var(--color-ink);
+              color: var(--color-cream);
+              font-size: 0.8rem;
+              cursor: pointer;
+              font-family: var(--font-sans);
+              transition: background 0.15s, border-color 0.15s, color 0.15s;
+            "
+          >
+            All
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="burnout"
+            style="
+              padding: 0.35rem 0.9rem;
+              border-radius: var(--radius-pill);
+              border: 1px solid var(--color-border);
+              background: transparent;
+              color: var(--color-mid);
+              font-size: 0.8rem;
+              cursor: pointer;
+              font-family: var(--font-sans);
+              transition: background 0.15s, border-color 0.15s, color 0.15s;
+            "
+          >
+            Burnout
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="career"
+            style="
+              padding: 0.35rem 0.9rem;
+              border-radius: var(--radius-pill);
+              border: 1px solid var(--color-border);
+              background: transparent;
+              color: var(--color-mid);
+              font-size: 0.8rem;
+              cursor: pointer;
+              font-family: var(--font-sans);
+              transition: background 0.15s, border-color 0.15s, color 0.15s;
+            "
+          >
+            Career
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="purpose"
+            style="
+              padding: 0.35rem 0.9rem;
+              border-radius: var(--radius-pill);
+              border: 1px solid var(--color-border);
+              background: transparent;
+              color: var(--color-mid);
+              font-size: 0.8rem;
+              cursor: pointer;
+              font-family: var(--font-sans);
+              transition: background 0.15s, border-color 0.15s, color 0.15s;
+            "
+          >
+            Purpose
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="wellness"
+            style="
+              padding: 0.35rem 0.9rem;
+              border-radius: var(--radius-pill);
+              border: 1px solid var(--color-border);
+              background: transparent;
+              color: var(--color-mid);
+              font-size: 0.8rem;
+              cursor: pointer;
+              font-family: var(--font-sans);
+              transition: background 0.15s, border-color 0.15s, color 0.15s;
+            "
+          >
+            Wellness
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="leadership"
+            style="
+              padding: 0.35rem 0.9rem;
+              border-radius: var(--radius-pill);
+              border: 1px solid var(--color-border);
+              background: transparent;
+              color: var(--color-mid);
+              font-size: 0.8rem;
+              cursor: pointer;
+              font-family: var(--font-sans);
+              transition: background 0.15s, border-color 0.15s, color 0.15s;
+            "
+          >
+            Leadership
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="mindset"
+            style="
+              padding: 0.35rem 0.9rem;
+              border-radius: var(--radius-pill);
+              border: 1px solid var(--color-border);
+              background: transparent;
+              color: var(--color-mid);
+              font-size: 0.8rem;
+              cursor: pointer;
+              font-family: var(--font-sans);
+              transition: background 0.15s, border-color 0.15s, color 0.15s;
+            "
+          >
+            Mindset
+          </button>
+        </div>
+      </section>
+
+      <!-- =====================
+           BLOG POST GRID
+           ===================== -->
+      <section class="wrapper section" style="padding-top: 1.25rem;">
+        <div class="card-grid reveal-group" id="blog-grid">
+
+          <div class="blog-card" data-category="burnout">
+            <div class="blog-card-img">
+              <!-- <img src="assets/blog-1.jpg" alt="5 Signs of Burnout" /> -->
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-meta">Burnout &nbsp;·&nbsp; 5 min read</span>
+              <h3>The 5 Signs You're Closer to Burnout Than You Think</h3>
+              <p>
+                Overachievers are the last to admit exhaustion. Here's how
+                to spot the warning signs before they become a full stop.
+              </p>
+              <a href="blog-post.html" class="blog-card-link">Read more →</a>
+            </div>
+          </div>
+
+          <div class="blog-card" data-category="career">
+            <div class="blog-card-img">
+              <!-- <img src="assets/blog-2.jpg" alt="Why High-Achieving Women Stay Stuck" /> -->
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-meta">Career &nbsp;·&nbsp; 4 min read</span>
+              <h3>Why High-Achieving Women Stay Stuck (And How to Finally Move)</h3>
+              <p>
+                The traits that made you successful can also keep you from
+                making the changes you know you need. Here's what to do instead.
+              </p>
+              <a href="blog-post.html" class="blog-card-link">Read more →</a>
+            </div>
+          </div>
+
+          <div class="blog-card" data-category="purpose">
+            <div class="blog-card-img">
+              <!-- <img src="assets/blog-3.jpg" alt="Designing a Life You Love" /> -->
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-meta">Purpose &nbsp;·&nbsp; 6 min read</span>
+              <h3>Designing a Life You Love After You've "Made It"</h3>
+              <p>
+                Having it all doesn't always mean feeling it all. How to
+                reconnect with what matters most at any stage of the journey.
+              </p>
+              <a href="blog-post.html" class="blog-card-link">Read more →</a>
+            </div>
+          </div>
+
+          <div class="blog-card" data-category="leadership">
+            <div class="blog-card-img">
+              <!-- <img src="assets/blog-4.jpg" alt="Negotiating Your Worth" /> -->
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-meta">Leadership &nbsp;·&nbsp; 5 min read</span>
+              <h3>How to Negotiate Your Worth in a Room That Wasn't Built for You</h3>
+              <p>
+                27 years of sales leadership taught Cheryl how to ask for
+                what she deserves. Here's what she's learned — and how to
+                apply it to your next conversation.
+              </p>
+              <a href="blog-post.html" class="blog-card-link">Read more →</a>
+            </div>
+          </div>
+
+          <div class="blog-card" data-category="wellness">
+            <div class="blog-card-img">
+              <!-- <img src="assets/blog-5.jpg" alt="Wellness After a Health Crisis" /> -->
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-meta">Wellness &nbsp;·&nbsp; 7 min read</span>
+              <h3>What a Cancer Diagnosis Taught Me About Living on My Own Terms</h3>
+              <p>
+                A health crisis has a way of clarifying what actually matters.
+                Cheryl shares what she learned from her own — and what she
+                wishes someone had told her sooner.
+              </p>
+              <a href="blog-post.html" class="blog-card-link">Read more →</a>
+            </div>
+          </div>
+
+          <div class="blog-card" data-category="mindset">
+            <div class="blog-card-img">
+              <!-- <img src="assets/blog-6.jpg" alt="Perfectionism and Women" /> -->
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-meta">Mindset &nbsp;·&nbsp; 4 min read</span>
+              <h3>The Perfectionism Trap: Why Your Biggest Strength Is Holding You Back</h3>
+              <p>
+                Perfectionism isn't a personality flaw — it's a protection
+                strategy. Understanding where it comes from is the first step
+                to moving past it.
+              </p>
+              <a href="blog-post.html" class="blog-card-link">Read more →</a>
+            </div>
+          </div>
+
+          <div class="blog-card" data-category="career">
+            <div class="blog-card-img">
+              <!-- <img src="assets/blog-7.jpg" alt="Career Pivot Guide" /> -->
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-meta">Career &nbsp;·&nbsp; 6 min read</span>
+              <h3>Thinking About a Career Pivot? Read This First.</h3>
+              <p>
+                Pivoting isn't giving up — it's growing up. But there's
+                a right way to think about it before you make any moves.
+              </p>
+              <a href="blog-post.html" class="blog-card-link">Read more →</a>
+            </div>
+          </div>
+
+          <div class="blog-card" data-category="burnout">
+            <div class="blog-card-img">
+              <!-- <img src="assets/blog-8.jpg" alt="Recovering from Burnout" /> -->
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-meta">Burnout &nbsp;·&nbsp; 5 min read</span>
+              <h3>Recovering from Burnout: What Actually Helps (And What Doesn't)</h3>
+              <p>
+                Rest helps. But it's not the whole answer. Here's what
+                sustainable recovery from burnout actually looks like in
+                practice.
+              </p>
+              <a href="blog-post.html" class="blog-card-link">Read more →</a>
+            </div>
+          </div>
+
+          <div class="blog-card" data-category="purpose">
+            <div class="blog-card-img">
+              <!-- <img src="assets/blog-9.jpg" alt="Finding Purpose at Midlife" /> -->
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-meta">Purpose &nbsp;·&nbsp; 5 min read</span>
+              <h3>Finding Purpose at Midlife Isn't a Crisis — It's an Invitation</h3>
+              <p>
+                The discomfort of "is this it?" isn't a sign something is
+                wrong with you. It's a signal. Here's how to listen to it.
+              </p>
+              <a href="blog-post.html" class="blog-card-link">Read more →</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Load more placeholder -->
+        <div
+          class="reveal"
+          style="
+            text-align: center;
+            margin-top: 2.5rem;
+          "
+        >
+          <button
+            class="btn-secondary"
+            style="margin: 0 auto;"
+            onclick="this.style.display='none'; document.getElementById('more-posts').style.display='grid';"
+          >
+            Load more posts
+          </button>
+
+          <!-- Hidden additional posts (CMS will handle this later) -->
+          <div
+            id="more-posts"
+            class="card-grid"
+            style="display: none; margin-top: 1.5rem; text-align: left;"
+          >
+            <div class="blog-card" data-category="mindset">
+              <div class="blog-card-img"></div>
+              <div class="blog-card-body">
+                <span class="blog-card-meta">Mindset &nbsp;·&nbsp; 4 min read</span>
+                <h3>How to Stop Seeking Validation and Start Trusting Yourself</h3>
+                <p>
+                  Approval-seeking is exhausting. Here's how to build the
+                  kind of internal compass that doesn't need anyone else's
+                  sign-off.
+                </p>
+                <a href="blog-post.html" class="blog-card-link">Read more →</a>
+              </div>
+            </div>
+
+            <div class="blog-card" data-category="wellness">
+              <div class="blog-card-img"></div>
+              <div class="blog-card-body">
+                <span class="blog-card-meta">Wellness &nbsp;·&nbsp; 5 min read</span>
+                <h3>The Wellness Habits That Actually Survived My Busiest Years</h3>
+                <p>
+                  Not the perfect morning routine — the ones that held up
+                  through IPOs, cancer, and everything in between.
+                </p>
+                <a href="blog-post.html" class="blog-card-link">Read more →</a>
+              </div>
+            </div>
+
+            <div class="blog-card" data-category="leadership">
+              <div class="blog-card-img"></div>
+              <div class="blog-card-body">
+                <span class="blog-card-meta">Leadership &nbsp;·&nbsp; 6 min read</span>
+                <h3>Managing Up When Your Boss Doesn't See Your Value</h3>
+                <p>
+                  A practical guide to making your impact visible — without
+                  becoming someone you're not to do it.
+                </p>
+                <a href="blog-post.html" class="blog-card-link">Read more →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================
+           EMAIL SIGN-UP BAND
+           ===================== -->
+      <section class="band--ink">
+        <div class="wrapper section reveal">
+          <div
+            style="
+              display: grid;
+              grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+              gap: 3rem;
+              align-items: center;
+            "
+            class="two-column"
+          >
+            <div>
+              <span class="kicker" style="color: var(--color-gold);">Stay connected</span>
+              <h2 style="color: var(--color-cream); margin: 0.5rem 0 0.75rem;">
+                Get new posts delivered to your inbox.
+              </h2>
+              <p style="color: #d0c8bf; font-size: 0.95rem; line-height: 1.7;">
+                No spam, no noise — just honest, useful writing for
+                ambitious women navigating what's next. Unsubscribe
+                any time.
+              </p>
+            </div>
+            <div>
+              <form
+                style="display: flex; flex-direction: column; gap: 0.75rem;"
+                onsubmit="return false;"
+              >
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label
+                    for="subscribe-name"
+                    style="color: #d0c8bf;"
+                  >
+                    First name
+                  </label>
+                  <input
+                    type="text"
+                    id="subscribe-name"
+                    name="name"
+                    placeholder="Your first name"
+                    style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: var(--color-cream);"
+                  />
+                </div>
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label
+                    for="subscribe-email"
+                    style="color: #d0c8bf;"
+                  >
+                    Email address
+                  </label>
+                  <input
+                    type="email"
+                    id="subscribe-email"
+                    name="email"
+                    placeholder="you@example.com"
+                    style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: var(--color-cream);"
+                  />
+                </div>
+                <button type="submit" class="btn-warm" style="margin-top: 0.25rem;">
+                  Subscribe
+                </button>
+                <p style="font-size: 0.75rem; color: #8a7f76;">
+                  By subscribing, you agree to receive occasional emails
+                  from Cheryl Donahue. Unsubscribe any time.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================
+           BOTTOM CTA
+           ===================== -->
+      <section class="wrapper section reveal">
+        <div class="inline-strip inline-strip--warm">
+          <div class="inline-strip-text">
+            <span class="kicker">Ready for more than a blog post?</span>
+            <h2 style="margin-top: 0.4rem;">
+              Sometimes reading isn't enough. Let's talk.
+            </h2>
+            <p style="margin-top: 0.5rem;">
+              If something you've read here has resonated, the next step
+              is a real conversation. Book a consultation and let's see
+              what's possible.
+            </p>
+          </div>
+          <div class="inline-strip-actions">
+            <a href="work-with-me.html" class="btn-warm">Book a Consultation</a>
+            <a href="services.html" class="btn-secondary">Explore services</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="wrapper footer-inner">
+        <a href="index.html" class="footer-brand">
+          <div class="footer-logo" aria-hidden="true"></div>
+          <span class="footer-brand-name">From Burnout To Breakthrough</span>
+        </a>
+
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="my-story.html">My Story</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="work-with-me.html">Work With Me</a></li>
+        </ul>
+
+        <div class="footer-legal">
+          © <span id="year"></span> Cheryl Donahue. All rights reserved.
+          ·
+          <a href="terms.html">Terms &amp; Conditions</a>
+          ·
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+
+    <!-- Blog category filter script -->
+    <script>
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const blogCards = document.querySelectorAll("#blog-grid .blog-card");
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filter = btn.dataset.filter;
+
+          filterBtns.forEach((b) => {
+            b.style.background = "transparent";
+            b.style.borderColor = "var(--color-border)";
+            b.style.color = "var(--color-mid)";
+          });
+
+          btn.style.background = "var(--color-ink)";
+          btn.style.borderColor = "var(--color-ink)";
+          btn.style.color = "var(--color-cream)";
+
+          blogCards.forEach((card) => {
+            if (filter === "all" || card.dataset.category === filter) {
+              card.style.display = "flex";
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+
+  </body>
+</html>
