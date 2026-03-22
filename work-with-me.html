@@ -2,141 +2,502 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Book a Consultation | [Consultant Name]</title>
+    <title>Work With Me | Book a Consultation | Cheryl Donahue</title>
     <meta
       name="description"
-      content="Schedule a consultation with [Consultant Name] to discuss your goals, challenges, and whether there’s a fit to work together."
+      content="Ready to move from burnout to breakthrough? Book a consultation with Cheryl Donahue — executive coach and mentor for ambitious women in tech, sales, and leadership."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Work With Me | From Burnout To Breakthrough" />
+    <meta property="og:description" content="Book a consultation with Cheryl Donahue. No pressure, no pitch — just an honest conversation about where you are and what's possible." />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://fromburnoutbreakthrough.com/work-with-me.html" />
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts.js" defer></script>
   </head>
   <body>
-   <header>
-  <div class="wrapper navbar">
-    <a href="index.html" class="nav-brand">
-      <div class="nav-logo"></div>
-      <span>[Practice Name]</span>
-    </a>
 
-    <!-- Desktop navigation -->
-   <nav class="nav-links">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="testimonials.html">Testimonials</a>
-  <a href="case-studies.html">Case Studies</a>
-  <a href="contact.html">Contact</a>
-  <a href="work-with-me.html">Work with me</a>
-</nav>
-    <a href="work-with-me.html" class="nav-cta">Book a consultation</a>
+    <!-- HEADER -->
+    <header>
+      <div class="wrapper navbar">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-logo" aria-hidden="true"></div>
+          <div class="nav-brand-text">
+            <span class="nav-brand-name">From Burnout To Breakthrough</span>
+            <span class="nav-brand-tagline">Coaching &amp; Mentorship for Women</span>
+          </div>
+        </a>
 
-    <!-- Mobile hamburger -->
-    <button class="nav-toggle" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my-story.html">My Story</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
 
-  <!-- Mobile menu -->
- <nav class="nav-mobile">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="testimonials.html">Testimonials</a>
-  <a href="case-studies.html">Case Studies</a>
-  <a href="contact.html">Contact</a>
-  <a href="work-with-me.html" class="nav-mobile-cta">Book a consultation</a>
-</nav>
-</header>
+        <a href="work-with-me.html" class="nav-cta">Book a Consultation</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="nav-mobile" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="my-story.html">My Story</a>
+        <a href="services.html">Services</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="work-with-me.html" class="nav-mobile-cta">Book a Consultation</a>
+      </nav>
+    </header>
 
     <main>
-      <section class="wrapper section">
-        <div class="two-column">
-          <div>
-            <div class="section-kicker">Work with me</div>
-            <h1 class="section-title">Let’s explore whether it’s a fit.</h1>
-            <p class="section-description">
-              This call is about understanding your context, not a hard pitch.
-              If I’m not the right person, I’ll tell you plainly.
-            </p>
-            <ul class="bullet-list">
-              <li>30–45 minute video call.</li>
-              <li>We’ll review your goals, constraints, and current roadmap.</li>
-              <li>We’ll decide together whether it makes sense to proceed.</li>
-            </ul>
-            <br>
-            <p class="section-description">
-              New engagement openings: typically 1–2 per quarter.
-              <br>
-              If you don’t see a time that works, reach out via the contact page.
-            </p>
-          </div>
-          <div>
-            <!-- Calendly inline embed -->
-            <!-- Replace data-url with her actual Calendly scheduling link -->
-            <div
-              class="calendly-inline-widget"
-              data-url="https://calendly.com/YOUR-CALENDLY-URL"
-              style="min-width: 320px; height: 630px;"
-            ></div>
-            <script
-              type="text/javascript"
-              src="https://assets.calendly.com/assets/external/widget.js"
-              async
-            ></script>
+
+      <!-- =====================
+           PAGE HERO
+           ===================== -->
+      <section class="band--warm">
+        <div class="wrapper section--lg">
+          <div
+            style="
+              display: grid;
+              grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+              gap: 3rem;
+              align-items: center;
+            "
+            class="two-column"
+          >
+            <div class="reveal">
+              <span class="kicker">Work With Me</span>
+              <h1 style="margin-bottom: 0.85rem;">
+                Let's find out if<br />
+                <em class="serif" style="color: var(--color-terra);">
+                  this is the right fit.
+                </em>
+              </h1>
+              <p class="lead" style="margin-bottom: 1rem;">
+                No pressure, no pitch. A consultation is simply an honest
+                conversation — about where you are, what you want, and
+                whether working together makes sense.
+              </p>
+              <p style="font-size: 0.9rem; color: var(--color-muted);">
+                New client openings are available each quarter. If timing
+                isn't right today, reach out and we'll keep in touch.
+              </p>
+            </div>
+
+            <!-- Sidebar summary card -->
+            <div class="hero-card reveal" style="transition-delay: 0.1s;">
+              <div class="card-tag">What to expect</div>
+              <ul class="bullet-list" style="margin-top: 0.5rem;">
+                <li>A 30–45 minute conversation — no prep required.</li>
+                <li>We'll talk about where you are and what's feeling stuck.</li>
+                <li>Cheryl will share how she works and what results typically look like.</li>
+                <li>You'll leave with at least one clear insight, regardless of next steps.</li>
+                <li>No hard sell. If it's not the right fit, she'll tell you honestly.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
-            <section class="wrapper section">
-        <div class="inline-strip">
+
+      <!-- =====================
+           WHICH SERVICE IS RIGHT?
+           ===================== -->
+      <section class="wrapper section">
+        <div class="section-header reveal">
+          <div class="section-header-left">
+            <span class="kicker">Choose your path</span>
+            <h2>Not sure which service fits? Start here.</h2>
+            <p>
+              Every engagement begins with the same first step — a
+              conversation. But here's a simple guide to help you think
+              about where you're starting from.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-grid reveal-group">
+          <div class="card">
+            <div class="card-tag">Start here</div>
+            <h3>Clarity Session</h3>
+            <p style="margin-bottom: 1rem;">
+              One focused session, one specific challenge. Perfect if you're
+              unsure about coaching or just need support on a single decision
+              right now.
+            </p>
+            <ul class="bullet-list" style="margin-bottom: 1.25rem;">
+              <li>No ongoing commitment.</li>
+              <li>Great for testing the work.</li>
+              <li>Real value in a single conversation.</li>
+            </ul>
+            <a href="#booking" class="btn-secondary">Book a Clarity Session</a>
+          </div>
+
+          <div class="card" style="border-color: var(--color-terra);">
+            <div
+              class="card-tag"
+              style="
+                background: var(--color-peach-light);
+                border-color: var(--color-terra);
+              "
+            >
+              Most popular
+            </div>
+            <h3>1:1 Private Coaching</h3>
+            <p style="margin-bottom: 1rem;">
+              Ongoing, personalized sessions for women ready to go deep.
+              This is the core of the work — and where the biggest
+              transformations happen.
+            </p>
+            <ul class="bullet-list" style="margin-bottom: 1.25rem;">
+              <li>Tailored entirely to you.</li>
+              <li>Flexible cadence to fit your life.</li>
+              <li>Accountability, clarity, and momentum.</li>
+            </ul>
+            <a href="#booking" class="btn-warm">Apply for Coaching</a>
+          </div>
+
+          <div class="card">
+            <div class="card-tag">Senior leaders</div>
+            <h3>Executive Advisory</h3>
+            <p style="margin-bottom: 1rem;">
+              High-level strategic and personal support for women navigating
+              the complexity and pressure of leadership at the top.
+            </p>
+            <ul class="bullet-list" style="margin-bottom: 1.25rem;">
+              <li>Executive strategy meets personal evolution.</li>
+              <li>For C-suite, VP, and senior director level.</li>
+              <li>Highly confidential, deeply personalized.</li>
+            </ul>
+            <a href="#booking" class="btn-secondary">Apply for Advisory</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================
+           THE PROCESS
+           ===================== -->
+      <section class="band--warm">
+        <div class="wrapper section">
+          <div class="section-header reveal">
+            <div class="section-header-left">
+              <span class="kicker">The process</span>
+              <h2>What happens after you reach out.</h2>
+              <p>
+                Simple, straightforward, and low-pressure. Here's
+                exactly what to expect from the first message to the
+                first session.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-grid reveal-group">
+            <div class="card">
+              <div class="card-tag">Step 01</div>
+              <h3>Book a Consultation</h3>
+              <p>
+                Choose a time below that works for you. No prep required —
+                just show up ready to have an honest conversation.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-tag">Step 02</div>
+              <h3>We Talk</h3>
+              <p>
+                A relaxed 30–45 minute call. Cheryl listens first. You'll
+                share where you are, what's feeling stuck, and what you're
+                hoping for. No agenda beyond understanding you.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-tag">Step 03</div>
+              <h3>A Clear Next Step</h3>
+              <p>
+                Whether we decide to work together or not, you'll leave
+                with at least one clear insight and a sense of what's
+                possible. If the fit is right, we'll talk about how
+                to begin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================
+           BOOKING SECTION (CALENDLY)
+           ===================== -->
+      <section class="wrapper section" id="booking">
+        <div class="section-header reveal">
+          <div class="section-header-left">
+            <span class="kicker">Book now</span>
+            <h2>Choose a time that works for you.</h2>
+            <p>
+              All consultations are held virtually. Cheryl works with
+              clients remotely across the US and internationally.
+            </p>
+          </div>
+        </div>
+
+        <!-- Calendly embed slot -->
+        <div
+          class="reveal"
+          style="
+            background: var(--color-white);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            min-height: 680px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <!-- Replace the placeholder below with your Calendly embed script -->
+          <!-- Example:
+          <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/cheryl-donahue/consultation"
+            style="min-width:320px;height:680px;width:100%;"
+          ></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          -->
+          <div style="text-align: center; padding: 3rem;">
+            <div
+              style="
+                width: 56px;
+                height: 56px;
+                border-radius: 999px;
+                background: linear-gradient(135deg, var(--color-terra), var(--color-gold));
+                margin: 0 auto 1.25rem;
+              "
+            ></div>
+            <h3 style="margin-bottom: 0.5rem;">Calendly booking coming soon</h3>
+            <p style="font-size: 0.9rem; color: var(--color-muted); max-width: 320px; margin: 0 auto 1.5rem;">
+              In the meantime, reach out directly and Cheryl will be in
+              touch within 2 business days to schedule a time.
+            </p>
+            <a href="contact.html" class="btn-warm">Send a message instead</a>
+          </div>
+        </div>
+
+        <p
+          class="reveal"
+          style="
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--color-muted);
+            margin-top: 1rem;
+          "
+        >
+          Don't see a time that works? <a href="contact.html" style="color: var(--color-terra); text-decoration: underline;">Reach out directly</a>
+          and we'll find something that fits.
+        </p>
+      </section>
+
+      <!-- =====================
+           SOCIAL PROOF MINI
+           ===================== -->
+      <section class="wrapper section">
+        <div class="section-header reveal">
+          <div class="section-header-left">
+            <span class="kicker">What clients say</span>
+            <h2>On taking the first step.</h2>
+          </div>
+          <a href="testimonials.html" class="btn-secondary" style="flex-shrink:0;">
+            Read all testimonials
+          </a>
+        </div>
+
+        <div class="card-grid reveal-group">
+          <div class="testimonial-card">
+            <blockquote>
+              "I almost didn't book that first call. I kept telling myself I
+              could figure it out on my own. I'm so glad I finally picked up
+              the phone. It changed everything."
+            </blockquote>
+            <cite>
+              <strong>Client Name</strong>
+              VP of Sales, SaaS Company
+            </cite>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>
+              "The first conversation was so different from what I expected.
+              No pitch, no pressure — just someone who actually listened.
+              I signed up before we even hung up."
+            </blockquote>
+            <cite>
+              <strong>Client Name</strong>
+              Founder, Consulting Firm
+            </cite>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>
+              "I'd been thinking about it for months. Booking took five
+              minutes. I wish I'd done it sooner."
+            </blockquote>
+            <cite>
+              <strong>Client Name</strong>
+              Director of Operations
+            </cite>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================
+           FAQ
+           ===================== -->
+      <section class="band--warm">
+        <div class="wrapper section">
+          <div class="section-header reveal">
+            <div class="section-header-left">
+              <span class="kicker">FAQs</span>
+              <h2>Common questions before booking.</h2>
+            </div>
+          </div>
+
+          <div
+            class="two-column reveal"
+            style="gap: 1.5rem;"
+          >
+            <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+              <div class="card">
+                <h3 style="margin-bottom: 0.5rem; font-size: 1rem;">
+                  Is this only for women in tech or sales?
+                </h3>
+                <p>
+                  Not at all. While Cheryl has deep experience in those
+                  worlds, she works with ambitious women across many
+                  industries. What matters most is where you are — not
+                  what field you're in.
+                </p>
+              </div>
+              <div class="card">
+                <h3 style="margin-bottom: 0.5rem; font-size: 1rem;">
+                  How long does a typical engagement last?
+                </h3>
+                <p>
+                  It depends on the work and the woman. Some clients start
+                  with a single Clarity Session and go from there. Ongoing
+                  coaching engagements typically run 3–6 months, with
+                  flexibility built in.
+                </p>
+              </div>
+              <div class="card">
+                <h3 style="margin-bottom: 0.5rem; font-size: 1rem;">
+                  Do you work with clients outside the US?
+                </h3>
+                <p>
+                  Yes. All sessions are virtual and Cheryl works with
+                  clients internationally. Time zone logistics are always
+                  sorted in advance.
+                </p>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+              <div class="card">
+                <h3 style="margin-bottom: 0.5rem; font-size: 1rem;">
+                  What if I'm not sure coaching is right for me?
+                </h3>
+                <p>
+                  That's exactly what the consultation is for. There's no
+                  commitment required, and Cheryl will be honest with you
+                  about whether this is the right kind of support for
+                  where you are.
+                </p>
+              </div>
+              <div class="card">
+                <h3 style="margin-bottom: 0.5rem; font-size: 1rem;">
+                  How is this different from therapy?
+                </h3>
+                <p>
+                  Coaching is forward-focused and action-oriented. We work
+                  on where you're going and what's getting in the way —
+                  not on processing the past. Many clients work with both
+                  a therapist and a coach simultaneously.
+                </p>
+              </div>
+              <div class="card">
+                <h3 style="margin-bottom: 0.5rem; font-size: 1rem;">
+                  What does it cost?
+                </h3>
+                <p>
+                  Pricing is discussed during the consultation and varies
+                  by engagement type. Cheryl's work is a premium investment
+                  — and it's designed to deliver a return that goes well
+                  beyond what you pay.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================
+           BOTTOM CTA
+           ===================== -->
+      <section class="wrapper section reveal">
+        <div class="inline-strip inline-strip--warm">
           <div class="inline-strip-text">
-            <div class="section-kicker">Not ready to book?</div>
-            <h2 class="section-title" style="margin-top: 0.5rem;">
-              Get clearer on whether this is the right fit.
+            <span class="kicker">Not ready to book?</span>
+            <h2 style="margin-top: 0.4rem;">
+              No rush. Get clearer on the right fit first.
             </h2>
-            <p style="margin-top: 0.75rem; color: #4b5563; font-size: 0.95rem;">
-              Take a look at the services and case studies to see exactly how
-              engagements work and what kinds of results clients see.
+            <p style="margin-top: 0.5rem;">
+              Browse services, read the testimonials, or send a message
+              with any questions. Cheryl typically responds within
+              2 business days.
             </p>
           </div>
           <div class="inline-strip-actions">
-            <a href="services.html" class="btn-secondary">Review services</a>
-            <a href="case-studies.html" class="btn-secondary">View case studies</a>
+            <a href="services.html" class="btn-secondary">Explore services</a>
+            <a href="contact.html" class="btn-secondary">Ask a question</a>
           </div>
         </div>
       </section>
+
     </main>
 
-  <footer>
-      <div class="wrapper" style="text-align: center;">
-       <div class="footer-links" style="justify-content: center;">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="testimonials.html">Testimonials</a>
-  <a href="case-studies.html">Case Studies</a>
-  <a href="contact.html">Contact</a>
-  <a href="work-with-me.html">Work with me</a>
-</div>
-        <div style="font-size: 0.85rem; color: #6b7280; margin-top: 0.25rem;">
-          © <span id="year"></span> [Consultant Name]. All rights reserved.
+    <!-- FOOTER -->
+    <footer>
+      <div class="wrapper footer-inner">
+        <a href="index.html" class="footer-brand">
+          <div class="footer-logo" aria-hidden="true"></div>
+          <span class="footer-brand-name">From Burnout To Breakthrough</span>
+        </a>
+
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="my-story.html">My Story</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="work-with-me.html">Work With Me</a></li>
+        </ul>
+
+        <div class="footer-legal">
+          © <span id="year"></span> Cheryl Donahue. All rights reserved.
           ·
-          <a href="terms.html" style="color: #6b7280; text-decoration: underline;"
-            >Terms &amp; Conditions</a
-          >
+          <a href="terms.html">Terms &amp; Conditions</a>
           ·
-          <a
-            href="privacy.html"
-            style="color: #6b7280; text-decoration: underline;"
-            >Privacy Policy</a
-          >
+          <a href="privacy.html">Privacy Policy</a>
         </div>
       </div>
       <script>
         document.getElementById("year").textContent = new Date().getFullYear();
       </script>
     </footer>
+
   </body>
 </html>
