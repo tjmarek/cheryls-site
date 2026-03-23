@@ -1223,3 +1223,10 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 768px) {
+  .two-column {
+    grid-template-columns: 1fr !important;
+    gap: 1.75rem !important;
+  }
+}
+
