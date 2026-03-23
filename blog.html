@@ -14,136 +14,45 @@
       content="Insights, reflections, and practical perspective for ambitious women navigating big transitions."
     />
     <meta property="og:type" content="website" />
-        <meta property="og:type" content="website" />
     <link rel="canonical" href="https://fromburnoutbreakthrough.com/blog.html" />
     <link rel="icon" type="image/png" href="assets/fav.png" />
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts.js" defer></script>
-
-    <style>
-      /* Featured post responsive grid */
-      .featured-post-grid {
-        display: grid;
-        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-        gap: 2.5rem;
-        align-items: stretch;
-        background: var(--color-white);
-        border: 1px solid var(--color-border-light);
-        border-radius: var(--radius-lg);
-        overflow: hidden;
-      }
-
-      .featured-post-grid .blog-card-img {
-        height: 100%;
-        min-height: 260px;
-      }
-
-      .featured-post-grid .blog-card-img img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .featured-post-content {
-        padding: 2rem 2rem 2rem 0;
-      }
-
-      @media (max-width: 900px) {
-        .featured-post-grid {
-          grid-template-columns: 1fr;
-        }
-        .featured-post-content {
-          padding: 1.75rem;
-        }
-      }
-
-      @media (max-width: 600px) {
-        .featured-post-grid {
-          gap: 0;
-          border-radius: var(--radius-md);
-        }
-        .featured-post-grid .blog-card-img {
-          min-height: 220px;
-        }
-        .featured-post-content {
-          padding: 1.25rem 1.25rem 1.5rem;
-        }
-      }
-
-      /* Blog grid spacing + load-more fixes */
-      #blog-grid,
-      #more-posts {
-        align-items: stretch;
-      }
-
-      #blog-grid .blog-card,
-      #more-posts .blog-card {
-        display: flex;
-        flex-direction: column;
-      }
-
-      #more-posts {
-        margin-top: 1.75rem;
-      }
-
-      .load-more-wrap {
-        text-align: center;
-        margin-top: 2rem;
-      }
-
-      @media (max-width: 600px) {
-        .load-more-wrap {
-          margin-top: 1.5rem;
-        }
-      }
-    </style>
   </head>
   <body>
 
     <!-- HEADER -->
     <header>
       <div class="wrapper navbar">
+
         <a href="index.html" class="nav-brand">
-          <img
-            src="assets/fav.png"
-            alt="Cheryl Donahue"
-            style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover;"
-          />
+          <img src="assets/fav.png" alt="Cheryl Donahue"
+            style="width:36px;height:36px;border-radius:50%;object-fit:cover;">
           <div class="nav-brand-text">
             <span class="nav-brand-name">From Burnout To Breakthrough</span>
-            <span
-              style="
-                font-family: var(--font-serif);
-                font-style: italic;
-                font-size: 0.72rem;
-                font-weight: 400;
-                color: var(--color-terra);
-                letter-spacing: 0.01em;
-                line-height: 1.2;
-              "
-            >with Cheryl Donahue</span>
+            <span style="font-family:var(--font-serif);font-style:italic;font-size:0.72rem;font-weight:400;color:var(--color-terra);letter-spacing:0.01em;line-height:1.2;">
+              with Cheryl Donahue
+            </span>
           </div>
         </a>
 
         <nav aria-label="Main navigation">
           <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="my-story.html">My Story</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my-story.html">My Story</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </nav>
 
         <a href="work-with-me.html" class="nav-cta">Work With Me</a>
 
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
+
       </div>
 
       <nav class="nav-mobile" aria-label="Mobile navigation">
@@ -162,11 +71,11 @@
       <!-- PAGE HERO -->
       <section class="band--warm">
         <div class="wrapper section--lg">
-          <div class="reveal" style="max-width: 640px;">
+          <div class="reveal" style="max-width:640px;">
             <span class="kicker">The Blog</span>
-            <h1 style="margin-bottom: 0.85rem;">
+            <h1 style="margin-bottom:0.85rem;">
               Honest conversations about<br />
-              <em class="serif" style="color: var(--color-terra);">
+              <em class="serif" style="color:var(--color-terra);">
                 burnout, growth &amp; life.
               </em>
             </h1>
@@ -188,384 +97,243 @@
           </div>
         </div>
 
-        <div class="featured-post-grid reveal">
-          <!-- Featured image -->
-          <div class="blog-card-img">
-            <img
-              src="assets/5-signs-youre-closer-to-burnout-than-you-think.jpg"
+        <a href="blog-posts/5-signs-youre-closer-to-burnout-than-you-think.html"
+          class="blog-card blog-card--featured reveal"
+          style="
+            display:grid;
+            grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);
+            gap:0;
+            text-decoration:none;
+            border-radius:var(--radius-lg);
+            overflow:hidden;
+            border:1px solid var(--color-border-light);
+            background:var(--color-white);
+            align-items:stretch;
+            max-width:100%;
+          ">
+
+          <div class="blog-card-img"
+            style="height:auto;min-height:280px;border-radius:0;">
+            <img src="assets/5-signs-youre-closer-to-burnout-than-you-think.jpg"
               alt="The 5 Signs You're Closer to Burnout Than You Think"
-            />
+              style="width:100%;height:100%;object-fit:cover;display:block;" />
           </div>
 
-          <!-- Featured content -->
-          <div class="featured-post-content">
-            <span class="blog-card-meta" style="margin-bottom: 0.75rem; display: block;">
+          <div class="blog-card-body"
+            style="padding:2rem 2rem 2rem 2rem;justify-content:center;display:flex;flex-direction:column;">
+            <span class="blog-card-meta" style="margin-bottom:0.75rem;display:block;">
               Burnout &nbsp;·&nbsp; 5 min read &nbsp;·&nbsp; March 2026
             </span>
-            <h2 style="font-size: 1.4rem; margin-bottom: 0.75rem; line-height: 1.25;">
+            <h2 style="font-size:1.5rem;margin-bottom:0.75rem;line-height:1.2;
+              color:var(--color-ink);">
               The 5 Signs You're Closer to Burnout Than You Think
             </h2>
-            <p style="font-size: 0.95rem; color: var(--color-mid); line-height: 1.7; margin-bottom: 1.25rem;">
-              Overachievers are often the last to admit exhaustion. We
-              reframe it as drive, discipline, dedication. But there are
-              patterns — quieter ones — that signal you're much closer to
-              the edge than your calendar would suggest.
+            <p style="font-size:0.95rem;color:var(--color-mid);line-height:1.7;margin-bottom:1.5rem;">
+              Overachievers are often the last to admit exhaustion. We reframe it
+              as drive, discipline, dedication. But there are patterns — quieter
+              ones — that signal you're much closer to the edge than your calendar
+              would suggest.
             </p>
-            <a
-              href="blog-posts/5-signs-youre-closer-to-burnout-than-you-think.html"
-              class="btn-warm"
-            >Read the article</a>
+            <span class="btn-warm" style="align-self:flex-start;">Read the article</span>
           </div>
-        </div>
+
+          <style>
+            @media (max-width:860px) {
+              .blog-card--featured {
+                grid-template-columns: 1fr !important;
+              }
+              .blog-card--featured .blog-card-img {
+                min-height: 220px !important;
+              }
+              .blog-card--featured .blog-card-body {
+                padding: 1.5rem !important;
+              }
+            }
+            @media (max-width:480px) {
+              .blog-card--featured .blog-card-img {
+                min-height: 180px !important;
+              }
+              .blog-card--featured .blog-card-body {
+                padding: 1.25rem !important;
+              }
+            }
+          </style>
+        </a>
       </section>
 
       <!-- CATEGORY FILTERS -->
-      <section class="wrapper" style="padding-bottom: 1rem;">
-        <div
-          class="reveal"
-          style="
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.6rem;
-            align-items: center;
-          "
-        >
-          <span
-            style="
-              font-size: 0.8rem;
-              color: var(--color-muted);
-              margin-right: 0.25rem;
-            "
-          >
+      <section class="wrapper" style="padding-bottom:1rem;">
+        <div class="reveal"
+          style="display:flex;flex-wrap:wrap;gap:0.6rem;align-items:center;">
+          <span style="font-size:0.8rem;color:var(--color-muted);margin-right:0.25rem;">
             Filter by:
           </span>
-          <button
-            class="filter-btn active"
-            data-filter="all"
-            style="
-              padding: 0.35rem 0.9rem;
-              border-radius: var(--radius-pill);
-              border: 1px solid var(--color-ink);
-              background: var(--color-ink);
-              color: var(--color-cream);
-              font-size: 0.8rem;
-              cursor: pointer;
-              font-family: var(--font-sans);
-              transition: background 0.15s, border-color 0.15s, color 0.15s;
-            "
-          >
+          <button class="filter-btn active" data-filter="all"
+            style="padding:0.35rem 0.9rem;border-radius:var(--radius-pill);border:1px solid var(--color-ink);background:var(--color-ink);color:var(--color-cream);font-size:0.8rem;cursor:pointer;font-family:var(--font-sans);transition:background 0.15s,border-color 0.15s,color 0.15s;">
             All
           </button>
-          <button
-            class="filter-btn"
-            data-filter="burnout"
-            style="
-              padding: 0.35rem 0.9rem;
-              border-radius: var(--radius-pill);
-              border: 1px solid var(--color-border);
-              background: transparent;
-              color: var(--color-mid);
-              font-size: 0.8rem;
-              cursor: pointer;
-              font-family: var(--font-sans);
-              transition: background 0.15s, border-color 0.15s, color 0.15s;
-            "
-          >
+          <button class="filter-btn" data-filter="burnout"
+            style="padding:0.35rem 0.9rem;border-radius:var(--radius-pill);border:1px solid var(--color-border);background:transparent;color:var(--color-mid);font-size:0.8rem;cursor:pointer;font-family:var(--font-sans);transition:background 0.15s,border-color 0.15s,color 0.15s;">
             Burnout
           </button>
-          <button
-            class="filter-btn"
-            data-filter="career"
-            style="
-              padding: 0.35rem 0.9rem;
-              border-radius: var(--radius-pill);
-              border: 1px solid var(--color-border);
-              background: transparent;
-              color: var(--color-mid);
-              font-size: 0.8rem;
-              cursor: pointer;
-              font-family: var(--font-sans);
-              transition: background 0.15s, border-color 0.15s, color 0.15s;
-            "
-          >
+          <button class="filter-btn" data-filter="career"
+            style="padding:0.35rem 0.9rem;border-radius:var(--radius-pill);border:1px solid var(--color-border);background:transparent;color:var(--color-mid);font-size:0.8rem;cursor:pointer;font-family:var(--font-sans);transition:background 0.15s,border-color 0.15s,color 0.15s;">
             Career
           </button>
-          <button
-            class="filter-btn"
-            data-filter="purpose"
-            style="
-              padding: 0.35rem 0.9rem;
-              border-radius: var(--radius-pill);
-              border: 1px solid var(--color-border);
-              background: transparent;
-              color: var(--color-mid);
-              font-size: 0.8rem;
-              cursor: pointer;
-              font-family: var(--font-sans);
-              transition: background 0.15s, border-color 0.15s, color 0.15s;
-            "
-          >
+          <button class="filter-btn" data-filter="purpose"
+            style="padding:0.35rem 0.9rem;border-radius:var(--radius-pill);border:1px solid var(--color-border);background:transparent;color:var(--color-mid);font-size:0.8rem;cursor:pointer;font-family:var(--font-sans);transition:background 0.15s,border-color 0.15s,color 0.15s;">
             Purpose
           </button>
-          <button
-            class="filter-btn"
-            data-filter="wellness"
-            style="
-              padding: 0.35rem 0.9rem;
-              border-radius: var(--radius-pill);
-              border: 1px solid var(--color-border);
-              background: transparent;
-              color: var(--color-mid);
-              font-size: 0.8rem;
-              cursor: pointer;
-              font-family: var(--font-sans);
-              transition: background 0.15s, border-color 0.15s, color 0.15s;
-            "
-          >
+          <button class="filter-btn" data-filter="wellness"
+            style="padding:0.35rem 0.9rem;border-radius:var(--radius-pill);border:1px solid var(--color-border);background:transparent;color:var(--color-mid);font-size:0.8rem;cursor:pointer;font-family:var(--font-sans);transition:background 0.15s,border-color 0.15s,color 0.15s;">
             Wellness
           </button>
-          <button
-            class="filter-btn"
-            data-filter="leadership"
-            style="
-              padding: 0.35rem 0.9rem;
-              border-radius: var(--radius-pill);
-              border: 1px solid var(--color-border);
-              background: transparent;
-              color: var(--color-mid);
-              font-size: 0.8rem;
-              cursor: pointer;
-              font-family: var(--font-sans);
-              transition: background 0.15s, border-color 0.15s, color 0.15s;
-            "
-          >
+          <button class="filter-btn" data-filter="leadership"
+            style="padding:0.35rem 0.9rem;border-radius:var(--radius-pill);border:1px solid var(--color-border);background:transparent;color:var(--color-mid);font-size:0.8rem;cursor:pointer;font-family:var(--font-sans);transition:background 0.15s,border-color 0.15s,color 0.15s;">
             Leadership
           </button>
-          <button
-            class="filter-btn"
-            data-filter="mindset"
-            style="
-              padding: 0.35rem 0.9rem;
-              border-radius: var(--radius-pill);
-              border: 1px solid var(--color-border);
-              background: transparent;
-              color: var(--color-mid);
-              font-size: 0.8rem;
-              cursor: pointer;
-              font-family: var(--font-sans);
-              transition: background 0.15s, border-color 0.15s, color 0.15s;
-            "
-          >
+          <button class="filter-btn" data-filter="mindset"
+            style="padding:0.35rem 0.9rem;border-radius:var(--radius-pill);border:1px solid var(--color-border);background:transparent;color:var(--color-mid);font-size:0.8rem;cursor:pointer;font-family:var(--font-sans);transition:background 0.15s,border-color 0.15s,color 0.15s;">
             Mindset
           </button>
         </div>
       </section>
 
       <!-- BLOG POST GRID -->
-      <section class="wrapper section" style="padding-top: 1.25rem;">
+      <section class="wrapper section" style="padding-top:1.25rem;">
         <div class="card-grid reveal-group" id="blog-grid">
 
-          <!-- 1: 5 Signs (Burnout) -->
-          <article class="blog-card" data-category="burnout" data-visible="true">
+          <!-- 1: 5 Signs — Burnout -->
+          <article class="blog-card" data-category="burnout">
             <div class="blog-card-img">
-              <img
-                src="assets/5-signs-youre-closer-to-burnout-than-you-think.jpg"
-                alt="The 5 Signs You're Closer to Burnout Than You Think"
-              />
+              <img src="assets/5-signs-youre-closer-to-burnout-than-you-think.jpg"
+                alt="The 5 Signs You're Closer to Burnout Than You Think" />
             </div>
             <div class="blog-card-body">
               <span class="blog-card-meta">Burnout &nbsp;·&nbsp; 5 min read</span>
               <h3>The 5 Signs You're Closer to Burnout Than You Think</h3>
-              <p>
-                Overachievers are the last to admit exhaustion. Here's how
-                to spot the warning signs before they become a full stop.
-              </p>
-              <a
-                href="blog-posts/5-signs-youre-closer-to-burnout-than-you-think.html"
-                class="blog-card-link"
-              >Read more →</a>
+              <p>Overachievers are the last to admit exhaustion. Here's how to spot the warning signs before they become a full stop.</p>
+              <a href="blog-posts/5-signs-youre-closer-to-burnout-than-you-think.html" class="blog-card-link">Read more →</a>
             </div>
           </article>
 
-          <!-- 2: Why High-Achieving Women Stay Stuck (Career) -->
-          <article class="blog-card" data-category="career" data-visible="true">
+          <!-- 2: Why High-Achieving Women Stay Stuck — Career -->
+          <article class="blog-card" data-category="career">
             <div class="blog-card-img">
-              <img
-                src="assets/why-high-achieving-women-stay-stuck.jpg"
-                alt="Why High-Achieving Women Stay Stuck"
-              />
+              <img src="assets/why-high-achieving-women-stay-stuck.jpg"
+                alt="Why High-Achieving Women Stay Stuck" />
             </div>
             <div class="blog-card-body">
               <span class="blog-card-meta">Career &nbsp;·&nbsp; 6 min read</span>
               <h3>Why High-Achieving Women Stay Stuck</h3>
-              <p>
-                The traits that made you successful can also keep you from
-                making the changes you know you need. Here's what to do instead.
-              </p>
-              <a
-                href="blog-posts/why-high-achieving-women-stay-stuck.html"
-                class="blog-card-link"
-              >Read more →</a>
+              <p>The traits that made you successful can also keep you from making the changes you know you need.</p>
+              <a href="blog-posts/why-high-achieving-women-stay-stuck.html" class="blog-card-link">Read more →</a>
             </div>
           </article>
 
-          <!-- 3: Designing a Life You Love (Purpose) -->
-          <article class="blog-card" data-category="purpose" data-visible="true">
+          <!-- 3: Designing a Life You Love — Purpose -->
+          <article class="blog-card" data-category="purpose">
             <div class="blog-card-img">
-              <img
-                src="assets/designing-a-life-you-love.jpg"
-                alt="Designing a Life You Love After You've 'Made It'"
-              />
+              <img src="assets/designing-a-life-you-love.jpg"
+                alt="Designing a Life You Love After You've Made It" />
             </div>
             <div class="blog-card-body">
               <span class="blog-card-meta">Purpose &nbsp;·&nbsp; 7 min read</span>
               <h3>Designing a Life You Love After You've "Made It"</h3>
-              <p>
-                Having it all doesn't always mean feeling it all. How to
-                reconnect with what matters most at any stage of the journey.
-              </p>
-              <a
-                href="blog-posts/designing-a-life-you-love.html"
-                class="blog-card-link"
-              >Read more →</a>
+              <p>Having it all doesn't always mean feeling it all. How to reconnect with what matters most at any stage.</p>
+              <a href="blog-posts/designing-a-life-you-love.html" class="blog-card-link">Read more →</a>
             </div>
           </article>
 
-          <!-- 4: How to Negotiate Your Worth (Leadership/Career) -->
-          <article class="blog-card" data-category="leadership" data-visible="true">
+          <!-- 4: How to Negotiate Your Worth — Leadership -->
+          <article class="blog-card" data-category="leadership">
             <div class="blog-card-img">
-              <img
-                src="assets/how-to-negotiate-your-worth.jpg"
-                alt="How to Negotiate Your Worth in a Room That Wasn't Built for You"
-              />
+              <img src="assets/how-to-negotiate-your-worth.jpg"
+                alt="How to Negotiate Your Worth" />
             </div>
             <div class="blog-card-body">
               <span class="blog-card-meta">Career &nbsp;·&nbsp; 7 min read</span>
               <h3>How to Negotiate Your Worth in a Room That Wasn't Built for You</h3>
-              <p>
-                Practical strategies for asking for more in rooms that weren’t designed with you in mind.
-              </p>
-              <a
-                href="blog-posts/how-to-negotiate-your-worth.html"
-                class="blog-card-link"
-              >Read more →</a>
+              <p>Practical strategies for asking for more in rooms that weren't designed with you in mind.</p>
+              <a href="blog-posts/how-to-negotiate-your-worth.html" class="blog-card-link">Read more →</a>
             </div>
           </article>
 
-          <!-- 5: Perfectionism Trap (Mindset) -->
-          <article class="blog-card" data-category="mindset" data-visible="true">
+          <!-- 5: Perfectionism Trap — Mindset -->
+          <article class="blog-card" data-category="mindset">
             <div class="blog-card-img">
-              <img
-                src="assets/perfectionism-trap.jpg"
-                alt="The Perfectionism Trap: Why Your Biggest Strength Is Holding You Back"
-              />
+              <img src="assets/perfectionism-trap.jpg"
+                alt="The Perfectionism Trap" />
             </div>
             <div class="blog-card-body">
               <span class="blog-card-meta">Mindset &nbsp;·&nbsp; 5 min read</span>
               <h3>The Perfectionism Trap: Why Your Biggest Strength Is Holding You Back</h3>
-              <p>
-                Perfectionism isn't a flaw — it's a protection strategy. Understanding it is the first step to loosening its grip.
-              </p>
-              <a
-                href="blog-posts/perfectionism-trap.html"
-                class="blog-card-link"
-              >Read more →</a>
+              <p>Perfectionism isn't a flaw — it's a protection strategy. Understanding it is the first step to loosening its grip.</p>
+              <a href="blog-posts/perfectionism-trap.html" class="blog-card-link">Read more →</a>
             </div>
           </article>
 
-          <!-- 6: Career Crossroads (Career) -->
-          <article class="blog-card" data-category="career" data-visible="false">
+          <!-- 6: Career Crossroads — Career (hidden initially) -->
+          <article class="blog-card blog-card--hidden" data-category="career">
             <div class="blog-card-img">
-              <img
-                src="assets/career-crossroads-stay-leave-redesign.jpg"
-                alt="Career Crossroads: Stay, Leave, or Redesign Your Role?"
-              />
+              <img src="assets/career-crossroads-stay-leave-redesign.jpg"
+                alt="Career Crossroads: Stay, Leave, or Redesign Your Role?" />
             </div>
             <div class="blog-card-body">
               <span class="blog-card-meta">Career &nbsp;·&nbsp; 7 min read</span>
               <h3>Career Crossroads: Stay, Leave, or Redesign Your Role?</h3>
-              <p>
-                When something has to change but you’re not sure what, here’s a framework to decide your next move.
-              </p>
-              <a
-                href="blog-posts/career-crossroads-stay-leave-redesign.html"
-                class="blog-card-link"
-              >Read more →</a>
+              <p>When something has to change but you're not sure what, here's a framework to decide your next move.</p>
+              <a href="blog-posts/career-crossroads-stay-leave-redesign.html" class="blog-card-link">Read more →</a>
             </div>
           </article>
 
-          <!-- 7: How to Stop Seeking Validation (Mindset) -->
-          <article class="blog-card" data-category="mindset" data-visible="false">
+          <!-- 7: How to Stop Seeking Validation — Mindset (hidden initially) -->
+          <article class="blog-card blog-card--hidden" data-category="mindset">
             <div class="blog-card-img">
-              <img
-                src="assets/how-to-stop-seeking-validation-and-start-trusting-yourself.jpg"
-                alt="How to Stop Seeking Validation and Start Trusting Yourself"
-              />
+              <img src="assets/how-to-stop-seeking-validation-and-start-trusting-yourself.jpg"
+                alt="How to Stop Seeking Validation and Start Trusting Yourself" />
             </div>
             <div class="blog-card-body">
               <span class="blog-card-meta">Mindset &nbsp;·&nbsp; 6 min read</span>
               <h3>How to Stop Seeking Validation and Start Trusting Yourself</h3>
-              <p>
-                Approval-seeking is exhausting. Build the kind of internal compass that doesn’t need anyone else’s sign‑off.
-              </p>
-              <a
-                href="blog-posts/how-to-stop-seeking-validation-and-start-trusting-yourself.html"
-                class="blog-card-link"
-              >Read more →</a>
+              <p>Approval-seeking is exhausting. Build the kind of internal compass that doesn't need anyone else's sign‑off.</p>
+              <a href="blog-posts/how-to-stop-seeking-validation-and-start-trusting-yourself.html" class="blog-card-link">Read more →</a>
             </div>
           </article>
 
-          <!-- 8: The Wellness Habits (Wellness) -->
-          <article class="blog-card" data-category="wellness" data-visible="false">
+          <!-- 8: Wellness Habits — Wellness (hidden initially) -->
+          <article class="blog-card blog-card--hidden" data-category="wellness">
             <div class="blog-card-img">
-              <img
-                src="assets/the-wellness-habits-that-actually-survived-my-busiest-years.jpg"
-                alt="The Wellness Habits That Actually Survived My Busiest Years"
-              />
+              <img src="assets/the-wellness-habits-that-actually-survived-my-busiest-years.jpg"
+                alt="The Wellness Habits That Actually Survived My Busiest Years" />
             </div>
             <div class="blog-card-body">
               <span class="blog-card-meta">Wellness &nbsp;·&nbsp; 6 min read</span>
               <h3>The Wellness Habits That Actually Survived My Busiest Years</h3>
-              <p>
-                Not the perfect morning routine — the small, realistic habits that held up in your busiest seasons.
-              </p>
-              <a
-                href="blog-posts/the-wellness-habits-that-actually-survived-my-busiest-years.html"
-                class="blog-card-link"
-              >Read more →</a>
+              <p>Not the perfect morning routine — the small, realistic habits that held up in your busiest seasons.</p>
+              <a href="blog-posts/the-wellness-habits-that-actually-survived-my-busiest-years.html" class="blog-card-link">Read more →</a>
             </div>
           </article>
 
-          <!-- 9: Managing Up (Leadership/Career) -->
-          <article class="blog-card" data-category="leadership" data-visible="false">
+          <!-- 9: Managing Up — Leadership (hidden initially) -->
+          <article class="blog-card blog-card--hidden" data-category="leadership">
             <div class="blog-card-img">
-              <img
-                src="assets/managing-up-when-your-boss-doesnt-see-your-value.jpg"
-                alt="Managing Up When Your Boss Doesn't See Your Value"
-              />
+              <img src="assets/managing-up-when-your-boss-doesnt-see-your-value.jpg"
+                alt="Managing Up When Your Boss Doesn't See Your Value" />
             </div>
             <div class="blog-card-body">
               <span class="blog-card-meta">Career &nbsp;·&nbsp; 7 min read</span>
               <h3>Managing Up When Your Boss Doesn't See Your Value</h3>
-              <p>
-                A practical guide to making your impact visible — without becoming someone you’re not to do it.
-              </p>
-              <a
-                href="blog-posts/managing-up-when-your-boss-doesnt-see-your-value.html"
-                class="blog-card-link"
-              >Read more →</a>
+              <p>A practical guide to making your impact visible — without becoming someone you're not to do it.</p>
+              <a href="blog-posts/managing-up-when-your-boss-doesnt-see-your-value.html" class="blog-card-link">Read more →</a>
             </div>
           </article>
 
         </div>
 
         <!-- Load more -->
-        <div class="reveal load-more-wrap">
-          <button
-            id="load-more-btn"
-            class="btn-secondary"
-            style="margin: 0 auto;"
-          >
+        <div style="text-align:center;margin-top:2rem;">
+          <button id="load-more-btn" class="btn-secondary">
             Load more posts
           </button>
         </div>
@@ -574,79 +342,39 @@
       <!-- EMAIL SIGN-UP BAND -->
       <section class="band--ink">
         <div class="wrapper section reveal">
-          <div
-            style="
-              display: grid;
-              grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-              gap: 3rem;
-              align-items: center;
-            "
-            class="two-column"
-          >
+          <div class="two-column"
+            style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3rem;align-items:center;">
             <div>
-              <span class="kicker" style="color: var(--color-gold);">Stay connected</span>
-              <h2
-                style="
-                  color: var(--color-cream);
-                  margin: 0.5rem 0 0.75rem;
-                "
-              >
+              <span class="kicker" style="color:var(--color-gold);">Stay connected</span>
+              <h2 style="color:var(--color-cream);margin:0.5rem 0 0.75rem;">
                 Get new posts delivered to your inbox.
               </h2>
-              <p style="color: #d0c8bf; font-size: 0.95rem; line-height: 1.7;">
-                No spam, no noise — just honest, useful writing for
-                ambitious women navigating what's next. Unsubscribe
-                any time.
+              <p style="color:#d0c8bf;font-size:0.95rem;line-height:1.7;">
+                No spam, no noise — just honest, useful writing for ambitious
+                women navigating what's next. Unsubscribe any time.
               </p>
             </div>
             <div>
-              <form
-                style="display: flex; flex-direction: column; gap: 0.75rem;"
-                onsubmit="return false;"
-              >
-               <div class="form-group" style="margin-bottom: 0;">
-        <label for="subscribe-name" style="color: #d0c8bf;">
-          First name
-        </label>
-        <input
-          type="text"
-          id="subscribe-name"
-          name="name"
-          placeholder="Your first name"
-          style="
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.15);
-            color: var(--color-cream);
-          "
-        />
-      </div>
-      <div class="form-group" style="margin-bottom: 0;">
-        <label for="subscribe-email" style="color: #d0c8bf;">
-          Email address
-        </label>
-        <input
-          type="email"
-          id="subscribe-email"
-          name="email"
-          placeholder="you@example.com"
-          style="
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.15);
-            color: var(--color-cream);
-          "
-          />
-        </div>
-
-                <button
-                  type="submit"
-                  class="btn-warm"
-                  style="margin-top: 0.25rem;"
-                >
+              <form style="display:flex;flex-direction:column;gap:0.75rem;"
+                onsubmit="return false;">
+                <div class="form-group" style="margin-bottom:0;">
+                  <label for="subscribe-name" style="color:#d0c8bf;">First name</label>
+                  <input type="text" id="subscribe-name" name="name"
+                    placeholder="Your first name"
+                    style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:var(--color-cream);" />
+                </div>
+                <div class="form-group" style="margin-bottom:0;">
+                  <label for="subscribe-email" style="color:#d0c8bf;">Email address</label>
+                  <input type="email" id="subscribe-email" name="email"
+                    placeholder="you@example.com"
+                    style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:var(--color-cream);" />
+                </div>
+                <button type="submit" class="btn-warm" style="margin-top:0.25rem;">
                   Subscribe
                 </button>
-                <p style="font-size: 0.75rem; color: #8a7f76;">
-                  By subscribing, you agree to receive occasional emails
-                  from Cheryl Donahue. Unsubscribe any time.
+                <p style="font-size:0.75rem;color:#8a7f76;">
+                  By subscribing, you agree to receive occasional emails from
+                  Cheryl Donahue. Unsubscribe any time.
                 </p>
               </form>
             </div>
@@ -659,13 +387,12 @@
         <div class="inline-strip inline-strip--warm">
           <div class="inline-strip-text">
             <span class="kicker">Ready for more than a blog post?</span>
-            <h2 style="margin-top: 0.4rem;">
+            <h2 style="margin-top:0.4rem;">
               Sometimes reading isn't enough. Let's talk.
             </h2>
-            <p style="margin-top: 0.5rem;">
-              If something you've read here has resonated, the next step
-              is a real conversation. Book a consultation and let's see
-              what's possible.
+            <p style="margin-top:0.5rem;">
+              If something you've read here has resonated, the next step is a
+              real conversation. Book a consultation and let's see what's possible.
             </p>
           </div>
           <div class="inline-strip-actions">
@@ -680,152 +407,111 @@
     <!-- FOOTER -->
     <footer>
       <div class="wrapper footer-inner">
+
         <a href="index.html" class="footer-brand">
-          <img
-            src="assets/fav.png"
-            alt="Cheryl Donahue"
-            style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover;"
-          />
-          <div
-            style="
-              display: flex;
-              flex-direction: column;
-              line-height: 1.3;
-              text-align: left;
-            "
-          >
+          <img src="assets/fav.png" alt="Cheryl Donahue"
+            style="width:32px;height:32px;border-radius:50%;object-fit:cover;">
+          <div style="display:flex;flex-direction:column;line-height:1.3;text-align:left;">
             <span class="footer-brand-name">From Burnout To Breakthrough</span>
-            <span
-              style="
-                font-family: var(--font-serif);
-                font-style: italic;
-                font-size: 0.7rem;
-                color: var(--color-terra);
-                letter-spacing: 0.01em;
-              "
-            >with Cheryl Donahue</span>
+            <span style="font-family:var(--font-serif);font-style:italic;font-size:0.7rem;color:var(--color-terra);letter-spacing:0.01em;">
+              with Cheryl Donahue
+            </span>
           </div>
         </a>
 
         <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="my-story.html">My Story</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="work-with-me.html">Work With Me</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="my-story.html">My Story</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="work-with-me.html">Work With Me</a></li>
         </ul>
-
 
         <div class="footer-legal">
           © <span class="year"></span> Cheryl Donahue. All rights reserved.
-          ·
-          <a href="terms.html">Terms &amp; Conditions</a>
-          ·
-          <a href="privacy.html">Privacy Policy</a>
+          · <a href="terms.html">Terms &amp; Conditions</a>
+          · <a href="privacy.html">Privacy Policy</a>
         </div>
 
         <div class="footer-credit">
           Built with ♡ by
           <a href="https://tjmarek.com" target="_blank" rel="noopener">TJ Marek</a>
         </div>
+
       </div>
       <script>
-        document
-          .querySelectorAll(".year")
-          .forEach((el) => (el.textContent = new Date().getFullYear()));
+        document.querySelectorAll(".year")
+          .forEach(el => el.textContent = new Date().getFullYear());
       </script>
     </footer>
 
-    <!-- Filter + Load More script -->
+    <!-- Filter + Load More -->
     <script>
       (function () {
-        const filterBtns = document.querySelectorAll(".filter-btn");
-        const blogCards = document.querySelectorAll("#blog-grid .blog-card");
-        const loadMoreBtn = document.getElementById("load-more-btn");
+        var cards     = Array.from(document.querySelectorAll("#blog-grid .blog-card"));
+        var filterBtns = Array.from(document.querySelectorAll(".filter-btn"));
+        var loadBtn   = document.getElementById("load-more-btn");
+        var activeFilter = "all";
 
-        const INITIAL_VISIBLE = 5;
+        /* Mark initially-hidden cards */
+        cards.forEach(function (card) {
+          card.isLoaded = !card.classList.contains("blog-card--hidden");
+        });
 
-        function applyVisibility() {
-          const activeBtn = document.querySelector(".filter-btn.active");
-          const filter = activeBtn ? activeBtn.dataset.filter : "all";
+        /* Hide the three --hidden ones to start */
+        cards.forEach(function (card) {
+          if (!card.isLoaded) card.style.display = "none";
+        });
 
-          let visibleCount = 0;
-          blogCards.forEach((card) => {
-            const category = card.dataset.category;
-            const shouldShow =
-              filter === "all" || category === filter;
+        function renderCards() {
+          var anyMatchHidden = false;
 
-            const isMarkedVisible = card.dataset.visible === "true";
+          cards.forEach(function (card) {
+            var catMatch = activeFilter === "all" || card.dataset.category === activeFilter;
 
-            if (shouldShow && isMarkedVisible) {
-              card.style.display = "flex";
-              visibleCount++;
+            if (catMatch && card.isLoaded) {
+              card.style.display = "";          /* visible */
             } else {
-              card.style.display = "none";
+              card.style.display = "none";      /* hidden */
             }
+
+            /* Check if any matching card is still un-loaded */
+            if (catMatch && !card.isLoaded) anyMatchHidden = true;
           });
 
-          // If all cards are now visible for this filter, hide the load more button
-          const anyHidden = Array.from(blogCards).some(
-            (card) => card.dataset.visible === "false"
-          );
-          if (!anyHidden) {
-            loadMoreBtn.style.display = "none";
-          } else {
-            loadMoreBtn.style.display = "inline-flex";
-          }
+          /* Show load-more only if un-loaded cards exist in current filter */
+          loadBtn.style.display = anyMatchHidden ? "" : "none";
         }
 
-        // Initialize: first N visible, rest hidden flag
-        blogCards.forEach((card, index) => {
-          if (index < INITIAL_VISIBLE) {
-            card.dataset.visible = "true";
-          } else {
-            card.dataset.visible = "false";
-          }
-        });
-        applyVisibility();
+        /* Filter pill click */
+        filterBtns.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            activeFilter = btn.dataset.filter;
 
-        // Filter click handler
-        filterBtns.forEach((btn) => {
-          btn.addEventListener("click", () => {
-            filterBtns.forEach((b) => {
-              b.classList.remove("active");
-              b.style.background = "transparent";
-              b.style.borderColor = "var(--color-border)";
-              b.style.color = "var(--color-mid)";
+            filterBtns.forEach(function (b) {
+              var on = b === btn;
+              b.classList.toggle("active", on);
+              b.style.background    = on ? "var(--color-ink)" : "transparent";
+              b.style.borderColor   = on ? "var(--color-ink)" : "var(--color-border)";
+              b.style.color         = on ? "var(--color-cream)" : "var(--color-mid)";
             });
 
-            btn.classList.add("active");
-            btn.style.background = "var(--color-ink)";
-            btn.style.borderColor = "var(--color-ink)";
-            btn.style.color = "var(--color-cream)";
-
-            applyVisibility();
+            renderCards();
           });
         });
 
-        // Load more handler
-        loadMoreBtn.addEventListener("click", () => {
-          let revealed = 0;
-          blogCards.forEach((card) => {
-            if (card.dataset.visible === "false" && revealed < 3) {
-              card.dataset.visible = "true";
-              revealed++;
-            }
+        /* Load more click — reveal all hidden cards, then re-render */
+        loadBtn.addEventListener("click", function () {
+          cards.forEach(function (card) {
+            if (!card.isLoaded) card.isLoaded = true;
           });
-
-          applyVisibility();
-
-          const anyHidden = Array.from(blogCards).some(
-            (card) => card.dataset.visible === "false"
-          );
-          if (!anyHidden) {
-            loadMoreBtn.style.display = "none";
-          }
+          renderCards();
         });
+
+        /* Init */
+        renderCards();
       })();
     </script>
 
