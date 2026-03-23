@@ -667,6 +667,66 @@ text-transform: uppercase;
 .hero-signoff           { font-size: 0.82rem; color: var(--color-muted); }
 .hero-signoff strong    { color: var(--color-ink); display: block; font-size: 0.9rem; }
 
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ============================================
+   HERO BACKGROUND ANIMATION
+   ============================================ */
+.hero-blob-bg {
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(217, 166, 132, 0.32), transparent 60%),
+    radial-gradient(circle at 80% 30%, rgba(94, 71, 60, 0.32), transparent 60%),
+    radial-gradient(circle at 40% 80%, rgba(235, 211, 190, 0.38), transparent 60%);
+  filter: blur(32px);
+  opacity: 0.6;
+  mix-blend-mode: multiply;
+  transform-origin: center;
+  animation: heroBlobMorph 28s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Make sure actual hero content stays above */
+.hero > .reveal,
+.hero > .hero-card {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes heroBlobMorph {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    border-radius: 60% 40% 55% 45% / 55% 60% 40% 45%;
+  }
+  33% {
+    transform: translate3d(-8px, 6px, 0) scale(1.05);
+    border-radius: 45% 55% 60% 40% / 40% 55% 60% 45%;
+  }
+  66% {
+    transform: translate3d(6px, -10px, 0) scale(1.03);
+    border-radius: 55% 45% 42% 58% / 58% 50% 50% 42%;
+  }
+  100% {
+    transform: translate3d(-4px, 4px, 0) scale(1.02);
+    border-radius: 60% 40% 55% 45% / 55% 60% 40% 45%;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .hero-blob-bg {
+    animation: none;
+    transform: scale(1);
+  }
+}
+
+
 /* ============================================
    WARM / INK BANDS
    ============================================ */
