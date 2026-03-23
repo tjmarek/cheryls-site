@@ -201,7 +201,7 @@
 
       <!-- BLOG POST GRID -->
       <section class="wrapper section" style="padding-top:1.25rem;">
-        <div class="card-grid reveal-group" id="blog-grid">
+        <div class="card-grid" id="blog-grid">
 
           <!-- 1: 5 Signs — Burnout -->
           <article class="blog-card" data-category="burnout">
@@ -316,7 +316,7 @@
           </article>
 
           <!-- 9: Managing Up — Leadership (hidden initially) -->
-          <article class="blog-card blog-card--hidden" data-category="leadership">
+         <article class="blog-card" data-category="leadership">
             <div class="blog-card-img">
               <img src="assets/managing-up-when-your-boss-doesnt-see-your-value.webp"
                 alt="Managing Up When Your Boss Doesn't See Your Value" />
@@ -449,66 +449,62 @@
 
     <!-- Filter + Load More -->
 <!-- Filter + Load More -->
+<!-- Filter + Load More -->
+<!-- Filter + Load More -->
 <script>
   (function () {
     var INITIAL = 6;
-    var cards       = Array.from(document.querySelectorAll("#blog-grid .blog-card"));
-    var filterBtns  = Array.from(document.querySelectorAll(".filter-btn"));
-    var loadBtn     = document.getElementById("load-more-btn");
+    var cards      = Array.from(document.querySelectorAll("#blog-grid .blog-card"));
+    var filterBtns = Array.from(document.querySelectorAll(".filter-btn"));
+    var loadBtn    = document.getElementById("load-more-btn");
     var activeFilter = "all";
-
-    /* Assign each card a load-slot number (1-based) */
-    cards.forEach(function (card, i) {
-      card.slot = i + 1;
-    });
-
-    /* How many slots are currently unlocked */
     var unlockedSlots = INITIAL;
+
+    /* Nuclear reset — strip anything scripts.js or CSS may have set */
+    cards.forEach(function (card, i) {
+      card.removeAttribute("style");
+      card.classList.remove("blog-card--hidden");
+      card.dataset.slot = i + 1;
+    });
 
     function renderCards() {
       var hasHiddenMatch = false;
 
       cards.forEach(function (card) {
-        var catMatch    = activeFilter === "all" || card.dataset.category === activeFilter;
-        var slotVisible = card.slot <= unlockedSlots;
+        var catMatch   = activeFilter === "all" || card.dataset.category === activeFilter;
+        var slotOpen   = parseInt(card.dataset.slot) <= unlockedSlots;
 
-        if (catMatch && slotVisible) {
-          card.style.display = "";
+        if (catMatch && slotOpen) {
+          card.style.cssText = "display:flex !important;";
         } else {
-          card.style.display = "none";
+          card.style.cssText = "display:none !important;";
         }
 
-        /* Is there a card that matches the filter but is still locked? */
-        if (catMatch && !slotVisible) hasHiddenMatch = true;
+        if (catMatch && !slotOpen) hasHiddenMatch = true;
       });
 
       loadBtn.style.display = hasHiddenMatch ? "" : "none";
     }
 
-    /* Filter pill clicks */
     filterBtns.forEach(function (btn) {
       btn.addEventListener("click", function () {
         activeFilter = btn.dataset.filter;
-
         filterBtns.forEach(function (b) {
           var on = b === btn;
           b.classList.toggle("active", on);
-          b.style.background  = on ? "var(--color-ink)"    : "transparent";
-          b.style.borderColor = on ? "var(--color-ink)"    : "var(--color-border)";
-          b.style.color       = on ? "var(--color-cream)"  : "var(--color-mid)";
+          b.style.background  = on ? "var(--color-ink)"   : "transparent";
+          b.style.borderColor = on ? "var(--color-ink)"   : "var(--color-border)";
+          b.style.color       = on ? "var(--color-cream)" : "var(--color-mid)";
         });
-
         renderCards();
       });
     });
 
-    /* Load more — unlock the next batch */
     loadBtn.addEventListener("click", function () {
       unlockedSlots += 3;
       renderCards();
     });
 
-    /* Boot */
     renderCards();
   })();
 </script>
