@@ -1230,3 +1230,31 @@ html {
   }
 }
 
+/* Work With Me hero card — responsive */
+@media (max-width: 768px) {
+  .two-column {
+    grid-template-columns: 1fr !important;
+    gap: 1.75rem !important;
+  }
+
+  /* Hero card full-width on mobile */
+  .hero-card {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+  }
+
+  /* Work With Me CTA button full-width on mobile */
+  .band--warm .btn-warm {
+    display: block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-card {
+    padding: 1.25rem;
+  }
+}
