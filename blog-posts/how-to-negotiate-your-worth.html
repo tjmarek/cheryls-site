@@ -274,7 +274,7 @@
       <div class="wrapper reveal" style="padding-bottom:1rem;">
         <div class="post-author">
           <div class="post-author-avatar">
-            <!-- <img src="../assets/cheryl-headshot.jpg" alt="Cheryl Donahue" /> -->
+            <img src="../assets/hero-headshot.png" alt="Cheryl Donahue" />
           </div>
           <div>
             <div class="post-author-name">Cheryl Donahue</div>
@@ -376,42 +376,55 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>
-      <div class="wrapper footer-inner">
-        <a href="../index.html" class="footer-brand">
-          <img src="../assets/fav.png" alt="Cheryl Donahue" style="width:32px;height:32px;border-radius:50%;object-fit:cover;">
-          <span class="footer-brand-name">From Burnout To Breakthrough</span>
-        </a>
+<footer>
+  <div class="wrapper footer-inner">
 
-        <ul class="footer-links">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../my-story.html">My Story</a></li>
-          <li><a href="../services.html">Services</a></li>
-          <li><a href="../testimonials.html">Testimonials</a></li>
-          <li><a href="../blog.html">Blog</a></li>
-          <li><a href="../work-with-me.html">Work With Me</a></li>
-          <li><a href="../contact.html">Contact</a></li>
-        </ul>
-
-        <div class="footer-legal">
-          © <span class="year"></span> Cheryl Donahue. All rights reserved.
-          ·
-          <a href="../terms.html">Terms &amp; Conditions</a>
-          ·
-          <a href="../privacy.html">Privacy Policy</a>
-        </div>
-
-        <div class="footer-credit">
-          Built with ♡ by
-          <a href="https://tjmarek.com" target="_blank" rel="noopener">TJ Marek</a>
-        </div>
+    <a href="index.html" class="footer-brand">
+     <img src="assets/fav.png" alt="Cheryl Donahue" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover;">
+      <div style="display: flex; flex-direction: column; line-height: 1.3; text-align: left;">
+        <span class="footer-brand-name">From Burnout To Breakthrough</span>
+        <span
+          style="
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 0.7rem;
+            color: var(--color-terra);
+            letter-spacing: 0.01em;
+          "
+        >with Cheryl Donahue</span>
       </div>
-      <script>
-        document.querySelectorAll(".year").forEach(
-          (el) => (el.textContent = new Date().getFullYear())
-        );
-      </script>
-    </footer>
+    </a>
+
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="my-story.html">My Story</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="work-with-me.html">Work With Me</a></li>
+    </ul>
+
+    <div class="footer-legal">
+      © <span class="year"></span> Cheryl Donahue. All rights reserved.
+      ·
+      <a href="terms.html">Terms &amp; Conditions</a>
+      ·
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+
+    <div class="footer-credit">
+      Built with ♡ by
+      <a href="https://tjmarek.com" target="_blank" rel="noopener">TJ Marek</a>
+    </div>
+
+  </div>
+  <script>
+    document.querySelectorAll(".year").forEach(
+      (el) => (el.textContent = new Date().getFullYear())
+    );
+  </script>
+</footer>
 
   </body>
 </html>
