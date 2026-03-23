@@ -274,7 +274,7 @@
           </article>
 
           <!-- 6: Career Crossroads — Career (hidden initially) -->
-          <article class="blog-card blog-card--hidden" data-category="career">
+          <article class="blog-card" data-category="career">
             <div class="blog-card-img">
               <img src="assets/career-crossroads-stay-leave-redesign.jpg"
                 alt="Career Crossroads: Stay, Leave, or Redesign Your Role?" />
@@ -288,7 +288,7 @@
           </article>
 
           <!-- 7: How to Stop Seeking Validation — Mindset (hidden initially) -->
-          <article class="blog-card blog-card--hidden" data-category="mindset">
+          <article class="blog-card" data-category="mindset">
             <div class="blog-card-img">
               <img src="assets/how-to-stop-seeking-validation-and-start-trusting-yourself.jpg"
                 alt="How to Stop Seeking Validation and Start Trusting Yourself" />
@@ -302,7 +302,7 @@
           </article>
 
           <!-- 8: Wellness Habits — Wellness (hidden initially) -->
-          <article class="blog-card blog-card--hidden" data-category="wellness">
+          <article class="blog-card" data-category="wellness">
             <div class="blog-card-img">
               <img src="assets/the-wellness-habits-that-actually-survived-my-busiest-years.jpg"
                 alt="The Wellness Habits That Actually Survived My Busiest Years" />
@@ -448,72 +448,70 @@
     </footer>
 
     <!-- Filter + Load More -->
-    <script>
-      (function () {
-        var cards     = Array.from(document.querySelectorAll("#blog-grid .blog-card"));
-        var filterBtns = Array.from(document.querySelectorAll(".filter-btn"));
-        var loadBtn   = document.getElementById("load-more-btn");
-        var activeFilter = "all";
+<!-- Filter + Load More -->
+<script>
+  (function () {
+    var INITIAL = 6;
+    var cards       = Array.from(document.querySelectorAll("#blog-grid .blog-card"));
+    var filterBtns  = Array.from(document.querySelectorAll(".filter-btn"));
+    var loadBtn     = document.getElementById("load-more-btn");
+    var activeFilter = "all";
 
-        /* Mark initially-hidden cards */
-        cards.forEach(function (card) {
-          card.isLoaded = !card.classList.contains("blog-card--hidden");
-        });
+    /* Assign each card a load-slot number (1-based) */
+    cards.forEach(function (card, i) {
+      card.slot = i + 1;
+    });
 
-        /* Hide the three --hidden ones to start */
-        cards.forEach(function (card) {
-          if (!card.isLoaded) card.style.display = "none";
-        });
+    /* How many slots are currently unlocked */
+    var unlockedSlots = INITIAL;
 
-        function renderCards() {
-          var anyMatchHidden = false;
+    function renderCards() {
+      var hasHiddenMatch = false;
 
-          cards.forEach(function (card) {
-            var catMatch = activeFilter === "all" || card.dataset.category === activeFilter;
+      cards.forEach(function (card) {
+        var catMatch    = activeFilter === "all" || card.dataset.category === activeFilter;
+        var slotVisible = card.slot <= unlockedSlots;
 
-            if (catMatch && card.isLoaded) {
-              card.style.display = "";          /* visible */
-            } else {
-              card.style.display = "none";      /* hidden */
-            }
-
-            /* Check if any matching card is still un-loaded */
-            if (catMatch && !card.isLoaded) anyMatchHidden = true;
-          });
-
-          /* Show load-more only if un-loaded cards exist in current filter */
-          loadBtn.style.display = anyMatchHidden ? "" : "none";
+        if (catMatch && slotVisible) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
         }
 
-        /* Filter pill click */
-        filterBtns.forEach(function (btn) {
-          btn.addEventListener("click", function () {
-            activeFilter = btn.dataset.filter;
+        /* Is there a card that matches the filter but is still locked? */
+        if (catMatch && !slotVisible) hasHiddenMatch = true;
+      });
 
-            filterBtns.forEach(function (b) {
-              var on = b === btn;
-              b.classList.toggle("active", on);
-              b.style.background    = on ? "var(--color-ink)" : "transparent";
-              b.style.borderColor   = on ? "var(--color-ink)" : "var(--color-border)";
-              b.style.color         = on ? "var(--color-cream)" : "var(--color-mid)";
-            });
+      loadBtn.style.display = hasHiddenMatch ? "" : "none";
+    }
 
-            renderCards();
-          });
+    /* Filter pill clicks */
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        activeFilter = btn.dataset.filter;
+
+        filterBtns.forEach(function (b) {
+          var on = b === btn;
+          b.classList.toggle("active", on);
+          b.style.background  = on ? "var(--color-ink)"    : "transparent";
+          b.style.borderColor = on ? "var(--color-ink)"    : "var(--color-border)";
+          b.style.color       = on ? "var(--color-cream)"  : "var(--color-mid)";
         });
 
-        /* Load more click — reveal all hidden cards, then re-render */
-        loadBtn.addEventListener("click", function () {
-          cards.forEach(function (card) {
-            if (!card.isLoaded) card.isLoaded = true;
-          });
-          renderCards();
-        });
-
-        /* Init */
         renderCards();
-      })();
-    </script>
+      });
+    });
+
+    /* Load more — unlock the next batch */
+    loadBtn.addEventListener("click", function () {
+      unlockedSlots += 3;
+      renderCards();
+    });
+
+    /* Boot */
+    renderCards();
+  })();
+</script>
 
   </body>
 </html>
